@@ -18,11 +18,8 @@
 </head>
 <body>
 
-  <!-- 桌面优先：object 内嵌 -->
   <object class="viewer" data="basic/Yahan_Yu_CV.pdf" type="application/pdf">
-    <!-- 次级回退：再尝试 iframe -->
     <iframe class="viewer" src="basic/Yahan_Yu_CV.pdf"></iframe>
-    <!-- 最终回退：给出直接打开/下载链接 -->
     <div class="fallback">
       <div>
         <p>PDF viewer not supported in this browser.</p>
@@ -32,12 +29,10 @@
   </object>
 
   <script>
-    // 移动端：直接用系统/浏览器原生 PDF 查看器打开，避免内嵌失败黑屏
     (function () {
       var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
       if (isMobile) {
         var pdfUrl = new URL('basic/Yahan_Yu_CV.pdf', location.href).href;
-        // 如果当前不是直接打开 PDF，就跳转到 PDF
         if (!/\.pdf(\?|$)/i.test(location.pathname)) {
           location.replace(pdfUrl);
         }
