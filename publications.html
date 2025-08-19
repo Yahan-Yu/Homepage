@@ -1,32 +1,306 @@
----
-layout: default
-title : Publications
-navbar_title: Publications
-body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
----
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications - Yahan Yu</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+<!-- Navigation Bar -->
+<nav style="width:100%; background-color:#f8f8f8; padding:10px 0; border-bottom:1px solid #ddd;">
+  <div style="max-width:800px; margin:0 auto; display:flex; justify-content:flex-end; gap:20px;">
+    <a href="index.html" style="text-decoration:none; font-weight:bold; color:#333;">Home</a>
+    <a href="publications.html" style="text-decoration:none; font-weight:bold; color:#333;">Publications</a>
+    <a href="cv.html" style="text-decoration:none; font-weight:bold; color:#333;">CV</a>
+  </div>
+</nav>
 
-<div class="row">
-    <div class="col-12 col-lg-10">
-        {% for year in pubs_by_year %}
-        {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
-        </div>
-        {% endfor %}
-    </div>
+<!-- Page Content -->
+<div style="max-width:800px; margin:30px auto; padding:0 20px;">
+  <h1>Publications</h1>
+  <p>* indicates equal contribution</p>
+  <!-- <b style="font-size: 30px">2025</b> -->
 
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
-        </div>
-    </div>
 
+          <table style="width:100%;border:0px;border-spacing:0px 30px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top: -10px;"><tbody>
+          <!--/ Publications -->
+          <tr>
+            <td style="margin-top:8px;font-size: 30px">
+               <b>2025</b>
+            </td>
+            </tr>
+          
+	 <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/proglora.png' alt="dise">
+            </td>
+            <td width="75%" valign="center" style="line-height:1.6;">
+              <span class="papertitle">Progressive LoRA for Multimodal Continual Instruction Tuning</span>
+              <div style="margin-top:8px;">
+               <strong>Yahan Yu</strong>, Duzhen Zhang, Yong Ren, Xuanle Zhao, Xiuyi Chen, Chenhui Chu
+              </div> 
+               <div style="margin-top:8px;">
+              <em>Findings of the Association for Computational Linguistics: <strong>ACL 2025</strong></em>
+              </div> 
+              <div style="margin-top:8px;">
+              <a href="https://aclanthology.org/2025.findings-acl.143/">Paper</a> / <a href="https://github.com/ku-nlp/ProgLoRA">Code</a>
+              </div> 
+            </td>
+          </tr>
+	  
+	 <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/enhance.png' alt="dise">
+            </td>
+            <td width="75%" valign="center" style="line-height:1.6;">
+              <span class="papertitle">Enhancing Multimodal Continual Instruction Tuning with BranchLoRA</span>
+              <div style="margin-top:8px;">
+               Duzhen Zhang, Yong Ren, Zhong-Zhi Li, <strong>Yahan Yu</strong>, Jiahua Dong, Chenxing Li, Zhilong Ji, Jinfeng Bai
+              </div> 
+               <div style="margin-top:8px;">
+              <em>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) <strong>(ACL 2025)</strong></em>
+              </div> 
+              <div style="margin-top:8px;">
+              <a href="https://arxiv.org/pdf/2506.02041">Paper</a>
+              </div> 
+            </td>
+          </tr>
+
+	 <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/siq.png' alt="dise">
+            </td>
+            <td width="75%" valign="center" style="line-height:1.6;">
+              <span class="papertitle">SpeechIQ: Speech-Agentic Intelligence Quotient Across Cognitive Levels in Voice Understanding by Large Language Models</span>
+              <div style="margin-top:8px;">
+               Zhen Wan, Chao-Han Huck Yang, <strong>Yahan Yu</strong>, Jinchuan Tian, Sheng Li, Ke Hu, Zhehuai Chen, Shinji Watanabe, Fei Cheng, Chenhui Chu, Sadao Kurohashi
+              </div> 
+               <div style="margin-top:8px;">
+              <em>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) <strong>(ACL 2025)</strong></em>
+              </div> 
+              <div style="margin-top:8px;">
+              <a href="https://aclanthology.org/2025.acl-long.1466/">Paper</a>
+              </div> 
+            </td>
+          </tr>
+
+	 <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/when.png' alt="dise">
+            </td>
+            <td width="75%" valign="center" style="line-height:1.6;">
+              <span class="papertitle">When Large Language Models Meet Speech: A Survey on Integration Approaches</span>
+              <div style="margin-top:8px;">
+               Zhengdong Yang, Shuichiro Shimizu, <strong>Yahan Yu</strong>, and Chenhui Chu
+              </div> 
+               <div style="margin-top:8px;">
+              <em>Findings of the Association for Computational Linguistics: <strong>ACL 2025</strong></em>
+              </div> 
+              <div style="margin-top:8px;">
+              <a href="https://arxiv.org/pdf/2502.19548">Paper</a>
+              </div> 
+            </td>
+          </tr>
+
+	 <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/sra.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Semantic-Retention Attack for Continual Named Entity Recognition</span>
+              <div style="margin-top:8px;">
+              <strong>Yahan Yu</strong>, Zhengdong Yang, Fei Cheng, Chenhui Chu
+              </div> 
+              <div style="margin-top:8px;">
+              <em>IEEE Transactions on Audio, Speech and Language Processing <strong>(TASLP)</strong></em>, 2025
+              </div> 
+              <div style="margin-top:8px;">
+              <a href="https://ieeexplore.ieee.org/document/11030305">Paper</a> / <a href="https://github.com/ku-nlp/SRA">Code</a>
+              </div> 
+            </td>
+          </tr>
+		  
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/taslp_fed.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Federated Incremental Named Entity Recognition</span>
+              <div style="margin-top:8px;">
+              Duzhen Zhang*, <strong>Yahan Yu*</strong>, Chenxing Li, Jiahua Dong, Dong Yu
+              </div> 
+              <div style="margin-top:8px;">
+              <em>IEEE Transactions on Audio, Speech and Language Processing <strong>(TASLP)</strong></em>, 2025
+              </div> 
+              <div style="margin-top:8px;">
+              <a href="https://arxiv.org/pdf/2411.11623">Paper</a> / <a href="https://github.com/BladeDancer957/FINER">Code</a>
+              </div> 
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/reasoning.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Learning Deliberately, Acting Intuitively: Unlocking Test-Time Reasoning in Multimodal LLMs</span>
+              <div style="margin-top:8px;">
+              <strong>Yahan Yu</strong>, Yuyang Dong, Masafumi Oyamada
+              </div> 
+              <!-- <div style="margin-top:8px;">
+              <em>IEEE Transactions on Audio, Speech and Language Processing <strong>(TASLP)</strong></em>, 2025
+              </div>  -->
+              <div style="margin-top:8px;">
+              <a href="https://arxiv.org/abs/2507.06999">Paper</a>
+              </div> 
+            </td>
+          </tr>
+
+          <tr>
+            <td style="margin-top:8px;font-size: 30px">
+               <b>2024</b>
+            </td>
+            </tr>
+
+	  <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/flex.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Flexible Weight Tuning and Weight Fusion Strategies for Continual Named Entity Recognition</span>
+              <div style="margin-top:8px;">
+	       <strong>Yahan Yu</strong>, Duzhen Zhang, Xiuyi Chen, Chenhui Chu
+           </div>   
+           <div style="margin-top:8px;">
+              <em>Findings of the Association for Computational Linguistics: <strong>ACL 2024</strong></em>
+              </div>
+              <div style="margin-top:8px;">
+              <a href="https://aclanthology.org/2024.findings-acl.79/">Paper</a> / <a href="https://github.com/ku-nlp/CNER_WT-WF">Code</a>
+              </div>
+            </td>
+          </tr>
+
+	  <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/mm.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">MM-LLMs: Recent Advances in Multimodal Large Language Models</span>
+              <div style="margin-top:8px;">
+               Duzhen Zhang*, <strong>Yahan Yu*</strong>, Chenxing Li, Jiahua Dong, Dan Su, Chenhui Chu, Dong Yu
+              </div>
+               <div style="margin-top:8px;">
+	     <em>Findings of the Association for Computational Linguistics: <strong>ACL 2024</strong></em>
+	     </div> 
+         <div style="margin-top:8px;">
+              <a href="https://arxiv.org/pdf/2401.13601.pdf">Paper</a> / <a href="https://mm-llms.github.io/">Website</a>
+              </div>
+            </td>
+          </tr>
+		  
+          <tr>
+            <td style="margin-top:8px;font-size: 30px">
+               <b>2023</b>
+            </td>
+            </tr>
+
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/sigir.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Decomposing Logits Distillation for Incremental Named Entity Recognition</span>
+              <div style="margin-top:8px;">
+               Duzhen Zhang*, <strong>Yahan Yu*</strong>, Feilong Chen, Xiuyi Chen
+              </div>
+               <div style="margin-top:8px;">
+              <em>Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR</strong>)</em>, 2023
+              </div>
+              <div style="margin-top:8px;">
+              <a href="https://web.archive.org/web/20230720052101id_/https://dl.acm.org/doi/pdf/10.1145/3539618.3591970">Paper</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/bias.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">A Multi-Modal Debiasing Model with Dynamical Constraint for Robust Visual Question Answering</span>
+              <div style="margin-top:8px;">
+               Yu Li, Bojie Hu, Fengshuo Zhang, <strong>Yahan Yu</strong>, Jian Liu, Yufeng Chen, Jinan Xu
+              </div>
+               <div style="margin-top:8px;">
+              <em>Findings of the Association for Computational Linguistics: <strong>ACL 2023</strong></em>
+              </div>
+              <div style="margin-top:8px;">
+              <a href="https://aclanthology.org/2023.findings-acl.311.pdf">Paper</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/cha.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Stroke Extraction of Chinese Character Based on Deep Structure Deformable Image Registration</span>
+              <div style="margin-top:8px;">
+               Meng Li, <strong>Yahan Yu</strong>, Yi Yang, Guanghao Ren, Jian Wang
+              </div>
+               <div style="margin-top:8px;">
+              <em>Proceedings of the AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong></em>, 2023
+              </div>
+              <div style="margin-top:8px;">
+              <a href="https://arxiv.org/pdf/2307.04341.pdf">Paper</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/cpfd.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Continual Named Entity Recognition without Catastrophic Forgetting</span>
+              <div style="margin-top:8px;">Duzhen Zhang, Wei Cong, Jiahua Dong, <strong>Yahan Yu</strong>, Xiuyi Chen, Yonggang Zhang, Zhen Fang
+              </div>
+               <div style="margin-top:8px;">
+              <em>Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP</strong>)</em>, 2023
+              </div>
+              <div style="margin-top:8px;">
+              <a href="https://aclanthology.org/2023.emnlp-main.509.pdf">Paper</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="margin-top:8px;font-size: 30px">
+               <b>2022</b>
+            </td>
+            </tr>
+
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/ghan.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">GHAN: Graph-based Hierarchical Aggregation Network for Text-Video Retrieval</span>
+              <div style="margin-top:8px;">
+               <strong>Yahan Yu</strong>, Bojie Hu, Yu Li
+              </div>
+              <div style="margin-top:8px;">
+              <em>Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP</strong>)</em>, 2022
+              </div>
+              <div style="margin-top:8px;">
+              <a href="https://aclanthology.org/2022.emnlp-main.374.pdf">Paper</a>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
 </div>
+
+</body>
+</html>

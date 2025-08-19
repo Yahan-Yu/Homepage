@@ -1,30 +1,392 @@
----
-layout: default
-title : Homepage
-navbar_title: Home
----
-{% include widgets/profile_card.html %}
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-{% include widgets/debug_repo_name.html %}
+    <title>Home - Yahan Yu</title>
 
-{% include widgets/debug_url.html %}
+    <meta name="author" content="Yahan Yu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="basic/icon.jpg" type="image/jpg">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+  
+<body>
+    <!-- Navigation Bar -->
+    <nav style="width:100%; background-color:#f8f8f8; padding:10px 0; border-bottom:1px solid #ddd;">
+    <div style="max-width:800px; margin:0 auto; display:flex; justify-content:flex-end; gap:20px;">
+        <a href="index.html" style="text-decoration:none; font-weight:bold; color:#333;">Home</a>
+        <a href="publications.html" style="text-decoration:none; font-weight:bold; color:#333;">Publications</a>
+        <a href="cv.html" style="text-decoration:none; font-weight:bold; color:#333;">CV</a>
+    </div>
+    </nav>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          
+          <!-- Basic Information -->
+          <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          
+          <!-- Basic Information -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Yahan Yu
+                </p>
+                <p>I'm currently a third-year Ph.D. student at <a href="https://nlp.ist.i.kyoto-u.ac.jp/EN/">Language Media Processing Lab</a> at Kyoto University, Japan, supervised by Prof. <a href="https://researchmap.jp/chu/?lang=english">Chenhui Chu</a>.</p>
+                <p>Before that, I received M.S. from <a href="http://english.ia.cas.cn/">Institute of Automation, Chinese Academy of Sciences (CASIA)</a>.
+                </p>
+                <p>
+                  My research interests lie in:<br>
+                  <strong>&nbsp &nbsp &nbsp1. Multimodal Large Language models</strong>
+                <ul style="list-style-type: disc; padding-left:50px;">
+                     <li style="margin-top: -15px;"> Low-rank Adaptation
+                      </li> 
+                     <li> Downstream Application
+                      </li>
+                   </ul>
+                  <strong>&nbsp &nbsp &nbsp2. Continual Learning</strong>
+                   <ul style="list-style-type: disc; padding-left:50px;">
+                     <li style="margin-top: -15px;"> Multimodal Continual Instruction Tuning
+                      </li> 
+                     <li> Continual Named Entity Recognition
+                      </li>
+                   </ul>
 
-{% if site.data.display.homepage.show_experience %}
-    {% include widgets/experience_card.html %}
-{% endif %}
+                  <strong>&nbsp &nbsp &nbsp3. LLM Reasoning</strong>
+                                <ul style="list-style-type: disc; padding-left:50px;">
+                     <li style="margin-top: -15px;"> Mathematical Reasoning
+                      </li> 
+		              <li> Reinforcement Learning based Reasoning Mechanisms
+                      </li>
+                   </ul>
+                <br></p>
+                <!-- <p style="text-align:center; margin-top: -35px;">
+                  <a href="mailto:jasmineyuyh@gmail.com">Email📧: jasmineyuyh (at) gmail (dot) com</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=QPcH1boAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Yahan-Yu">Github</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/yahan-yu-675766294/">LinkedIn</a>
+                </p>
+                <p>
+                  📣 
+                  <strong>
+                     I am looking for <span style="color:red">job and postdoc opportunities</span> for these directions.
+                  </strong>
+              </p>
+                <p>
+                  👏 
+                  <strong>
+                     Welcome all forms of academic discussion and collaboration.
+                  </strong>
+              </p> -->
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <img style="width:100%;max-width:100%;object-fit: cover;" alt="profile photo" src="basic/yahanyu.jpg" class="hoverZoomLink">
+              </td>
+            </tr>
+          </tbody></table>
+          <!--/ Basic Information -->
+                <p style="text-indent:1em; margin-top: -55px;">
+                  📣 
+                  <strong>
+                     I am looking for <span style="color:red">job and postdoc opportunities</span> for these directions.
+                  </strong>
+              </p>
+                <p style="text-indent:1em">
+                  👏 
+                  <strong>
+                     Welcome all forms of academic discussion and collaboration.
+                  </strong>
+              </p>
+                <p style="text-indent:1em; text-align:center;">
+                  <a href="mailto:jasmineyuyh@gmail.com">Email📧: jasmineyuyh (at) gmail (dot) com</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=QPcH1boAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Yahan-Yu">Github</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/yahan-yu-675766294/">LinkedIn</a>
+                </p>
+          <!-- Education -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Education🎓</h2>
+                <!-- ul style="list-style-type: disc; padding: 0;"-->
+                <ul style="list-style-type: disc; padding-left: 20px;">
+                  <li style="margin: 5px;">
+                    <b>Ph.D.</b> @ <b> <a href="https://nlp.ist.i.kyoto-u.ac.jp/EN/">Kyoto University</a></b>, 2023.10-2026.09 (expected)
+                    <br><span>Advisor: Prof. <a href="https://researchmap.jp/chu/?lang=english">Chenhui Chu</a></span>
+                  </li>
+                  <li style="margin: 5px;margin-top: 15px;">
+                    <b>M.S.</b> @ <b><a href="http://english.ia.cas.cn/">Institute of Automation, Chinese Academy of Sciences</a></b>, 2020.09-2023.06
+                    <!-- <br><span>Advisor: Prof. <a href="https://scholar.google.com/citations?hl=en&user=xl11SEMAAAAJ">Xu-Yao Zhang</a> and Prof. <a href="https://scholar.google.com/citations?hl=en&user=8r3y8IMAAAAJ">Cheng-Lin Liu</a></span> -->
+                  </li>
+                  <!-- <li style="margin: 5px;">
+                    <b>B.S.</b> @ <b><a href="https://www.nuaa.edu.cn">Nanjing University of Aeronautics and Astronautics</a></b>, 2018-2022
+                    <br><span>Advisor: Prof. <a href="https://www.aminer.cn/profile/xin-yang/542c4accdabfae2b4e1fe85f">Xin Yang</a> and Prof. <a href="https://ieeexplore.ieee.org/author/37536949000">Fuyang Chen</a></span>
+                  </li> -->
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+          <!--/ Education -->
 
-{% if site.data.display.homepage.show_news %}
-    {% assign count_news = site.news | size %}
-    {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-    {% endif %}
-{% endif %}
+          <!-- News -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>News💬</h2>
+                <!-- ul style="list-style-type: disc; padding: 0;"-->
+                <ul style="list-style-type: disc; padding-left: 20px;">
+		  <li style="margin: 5px;">
+                    <b>[2025.06]</b> One paper is accepted to <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10376">IEEE Transactions on Audio, Speech and Language Processing (TASLP)</a>.
+                  </li>
+                  <li style="margin: 5px;">
+                    <b>[2025.05]</b> Four papers are accepted to <a href="https://2025.aclweb.org">ACL 2025</a>. Congratulations to all my collaborators!
+                  </li>
+		<li style="margin: 5px;">
+                    <b>[2025.03]</b> One paper is accepted to <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10376">IEEE Transactions on Audio, Speech and Language Processing (TASLP)</a>.
+                  </li>
+                  <li style="margin: 5px;">
+                    <b>[2024.05]</b> Two papers are accepted to <a href="https://2024.aclweb.org">ACL 2024</a>.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            </tbody></table>
+          <!--/ News -->
 
-{% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {% 
-        include widgets/publication_card.html 
-        publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
-    %}
-{% endif %}
+                    <!-- experience -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research Experience💼</h2>
+                <!-- ul style="list-style-type: disc; padding: 0;"-->
+                <ul style="list-style-type: disc; padding-left: 20px;">
+                  <li style="margin: 5px;">
+                    <b>Research Intern</b> @ <b>NEC Corporation, Japan</b>, 2025.02-2025.05 
+                    <br><span>Advisor: Dr. <a href="https://dongyuyang.github.io/">Yuyang Dong</a> and Dr. <a href="https://scholar.google.com/citations?user=sbmRXxwAAAAJ&hl=en">Masafumi Oyamada</a> </span>
+                  </li>
+                  <li style="margin: 5px;margin-top: 15px;">
+                    <b>Research Intern</b> @ <b>Baidu, Inc., China</b>, 2022.12-2023.06
+                    <br><span>Advisor: Dr. <a href="https://scholar.google.com/citations?user=LAeLBYoAAAAJ&hl=en">Xiuyi Chen</a></span>
+                  </li>
+                  <li style="margin: 5px;margin-top: 15px;">
+                    <b>Research Intern</b> @ <b>Tencent, China</b>, 2021.12-2022.12
+                    <br><span>Advisor: <a href="https://scholar.google.com/citations?user=XT-qM3sAAAAJ&hl=en">Bojie Hu</span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+          <!--/ experience -->
+          
+          <!-- Publications -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:16px;width:100%;vertical-align:middle">
+              <h2>Selected Publications📄 <a href="publications.html" style="font-size:0.7em; margin-left:10px; text-decoration:none; color:#0073e6;">[View All]</a></h2>
+              <p>
+                <b>* indicates equal contribution</b>
+              </p>
+            </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 30px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top: -50px;"><tbody>
+          <!--/ Publications -->
+          
+	 <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/proglora.png' alt="dise">
+            </td>
+            <td width="75%" valign="center" style="line-height:1.6;">
+              <span class="papertitle">Progressive LoRA for Multimodal Continual Instruction Tuning</span>
+              <div style="margin-top:8px;">
+               <strong>Yahan Yu</strong>, Duzhen Zhang, Yong Ren, Xuanle Zhao, Xiuyi Chen, Chenhui Chu
+              </div> 
+               <div style="margin-top:8px;">
+              <em>Findings of the Association for Computational Linguistics: <strong>ACL 2025</strong></em>
+              </div> 
+              <div style="margin-top:8px;">
+              <a href="https://aclanthology.org/2025.findings-acl.143/">Paper</a> / <a href="https://github.com/ku-nlp/ProgLoRA">Code</a>
+              </div> 
+            </td>
+          </tr>
+	  
+	 <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/sra.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Semantic-Retention Attack for Continual Named Entity Recognition</span>
+              <div style="margin-top:8px;">
+              <strong>Yahan Yu</strong>, Zhengdong Yang, Fei Cheng, Chenhui Chu
+              </div> 
+              <div style="margin-top:8px;">
+              <em>IEEE Transactions on Audio, Speech and Language Processing <strong>(TASLP)</strong></em>, 2025
+              </div> 
+              <div style="margin-top:8px;">
+              <a href="https://ieeexplore.ieee.org/document/11030305">Paper</a> / <a href="https://github.com/ku-nlp/SRA">Code</a>
+              </div> 
+            </td>
+          </tr>
+		  
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/taslp_fed.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Federated Incremental Named Entity Recognition</span>
+              <div style="margin-top:8px;">
+              Duzhen Zhang*, <strong>Yahan Yu*</strong>, Chenxing Li, Jiahua Dong, Dong Yu
+              </div> 
+              <div style="margin-top:8px;">
+              <em>IEEE Transactions on Audio, Speech and Language Processing <strong>(TASLP)</strong></em>, 2025
+              </div> 
+              <div style="margin-top:8px;">
+              <a href="https://arxiv.org/pdf/2411.11623">Paper</a> / <a href="https://github.com/BladeDancer957/FINER">Code</a>
+              </div> 
+            </td>
+          </tr>
+  	 
+	  <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/flex.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Flexible Weight Tuning and Weight Fusion Strategies for Continual Named Entity Recognition</span>
+              <div style="margin-top:8px;">
+	       <strong>Yahan Yu</strong>, Duzhen Zhang, Xiuyi Chen, Chenhui Chu
+           </div>   
+           <div style="margin-top:8px;">
+              <em>Findings of the Association for Computational Linguistics: <strong>ACL 2024</strong></em>
+              </div>
+              <div style="margin-top:8px;">
+              <a href="https://aclanthology.org/2024.findings-acl.79/">Paper</a> / <a href="https://github.com/ku-nlp/CNER_WT-WF">Code</a>
+              </div>
+            </td>
+          </tr>
+
+	  <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/mm.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">MM-LLMs: Recent Advances in Multimodal Large Language Models</span>
+              <div style="margin-top:8px;">
+               Duzhen Zhang*, <strong>Yahan Yu*</strong>, Chenxing Li, Jiahua Dong, Dan Su, Chenhui Chu, Dong Yu
+              </div>
+               <div style="margin-top:8px;">
+	     <em>Findings of the Association for Computational Linguistics: <strong>ACL 2024</strong></em>
+	     </div> 
+         <div style="margin-top:8px;">
+              <a href="https://arxiv.org/pdf/2401.13601.pdf">Paper</a> / <a href="https://mm-llms.github.io/">Website</a>
+              </div>
+            </td>
+          </tr>
+		  
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/sigir.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">Decomposing Logits Distillation for Incremental Named Entity Recognition</span>
+              <div style="margin-top:8px;">
+               Duzhen Zhang*, <strong>Yahan Yu*</strong>, Feilong Chen, Xiuyi Chen
+              </div>
+               <div style="margin-top:8px;">
+              <em>Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval (<strong>SIGIR</strong>)</em>, 2023
+              </div>
+              <div style="margin-top:8px;">
+              <a href="https://web.archive.org/web/20230720052101id_/https://dl.acm.org/doi/pdf/10.1145/3539618.3591970">Paper</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:30%;max-width:30%" align="center">
+              <img style="width:100%;max-width:100%" src='images/ghan.png' alt="dise">
+            </td>
+            <td width="75%" valign="center">
+              <span class="papertitle">GHAN: Graph-based Hierarchical Aggregation Network for Text-Video Retrieval</span>
+              <div style="margin-top:8px;">
+               <strong>Yahan Yu</strong>, Bojie Hu, Yu Li
+              </div>
+              <div style="margin-top:8px;">
+              <em>Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP</strong>)</em>, 2022
+              </div>
+              <div style="margin-top:8px;">
+              <a href="https://aclanthology.org/2022.emnlp-main.374.pdf">Paper</a>
+              </div>
+            </td>
+          </tr>
+        <tr>
+        <td colspan="2" style="text-align:right; padding:10px;">
+            <a href="publications.html" style="font-size:1.3em; text-decoration:none; color:#0073e6;">
+            All Publications →
+            </a>
+        </td>
+        </tr>
+        </tbody></table>
+
+        <!-- Academic Services -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Academic Services📖</h2>
+                <p>
+                  <li style="margin: 5px;"> 
+                    <b>Conference Reviewer:</b> ACL, EMNLP, NAACL
+                  </li>
+                  <li style="margin: 5px;"> 
+                    <b>Journal Reviewer:</b> TASLP
+                  </li>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <!--/ Academic Services -->
+
+                  <!-- Academic Services -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Award🏆</h2>
+                <p>
+                  <li style="margin: 5px;"> 
+                    <b>DoGS Fellow:</b> Selected by Kyoto University DoGS NEXT AI Program, 2024.04 - 2026.09.
+                  </li>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <!--/ Academic Services -->
+            
+          <!-- template -->
+          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  <a href="https://github.com/jonbarron/jonbarron_website">Website Template</a>
+                </p>
+              </td>
+            </tr>
+          </tbody></table> -->
+          <!--/ template -->
+        <!-- </td>
+      </tr>
+    </table> -->
+
+    <p><center>
+      <div id="clustrmaps-widget" style="width:5%">
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=uwrMhRzg_kEgyZHBCftBOeyYwONdPpFxttroJLaI_GQ"></script>
+      </div>
+      <br>
+        &copy; Yahan Yu | Last updated: August, 2025
+    </center></p>
+  </body>
+</html>
